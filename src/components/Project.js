@@ -16,16 +16,31 @@ const Project = () => {
       img: project1,
       name: "Blog WebApp",
       github_link: "",
-      live_link: "",
+      live_link: "Web - React/CSS",
       desc:"It is a blog webapp where you can write short blog and perform CRUD function."
     },
     {
       img: project2,
       name: "CodeAck",
-      github_link: "",
-      live_link: "",
+      github_link: "https://github.com/manishya1669/codeAck",
+      live_link: "Web - React/Tailwind/Nodejs",
       desc:" A coding platform for student to maintain their consistency through the month."
     },
+    {
+      img: project2,
+      name: "Three_in_one",
+      github_link: "https://github.com/manishya1669/Three_in_one",
+      live_link: "App - Flutter/dart",
+      desc:"It's an application in which three games are present flappy bird, snake and chess."
+    },
+    {
+      img: project2,
+      name: "CodeAck",
+      github_link: "",
+      live_link: "App - Flutter/dart",
+      desc:" A coding platform for student to maintain their consistency through the month."
+    }
+
     
     
   ];
@@ -79,7 +94,7 @@ const Project = () => {
                      
                       className="text-cyan-600 bg-gray-800 px-2  rounded-md py-1 inline-block"
                     >
-                      Live Demo
+                      {project_info.live_link}
                     </a>
                     </div>
                   </div>

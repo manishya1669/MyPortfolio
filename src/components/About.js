@@ -1,7 +1,6 @@
 
 import React from "react";
 import aboutImg from "../assets/ProfilePhoto.jpeg";
-import resume from "../assets/Resume.pdf";
 
 const About = () => {
   const info = [
@@ -36,11 +35,11 @@ const About = () => {
               </div>
               <br />
               <br />
-              <a href={resume} download>
+              {/* <a href={resume} download>
                 <button className="btn-primary bg-cyan-600 text-white rounded-md p-2">Download Resume  
 
 📄</button>
-              </a>
+              </a> */}
             </div>
           </div>
           <div className="flex-1 md:mt-0 mt-6 flex justify-center items-center">

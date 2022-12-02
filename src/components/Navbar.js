@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
    
     <div className={`w-full sticky top-0 z-50 font-serif   scroll-smooth  ${!nav && "sticky"}` } >
-      <nav className="flex  w-full mx-auto justify-between bg-gray-600  scroll-smooth" id="home">
+      <nav className="flex  w-full mx-auto justify-between bg-gray-600  scroll-smooth" >
         <div className=" flow-root p-4 w-full   text-whiteLike px-10">
          
           <div className="float-right hidden lg:block text-lg">
@@ -65,7 +65,7 @@ const Navbar = () => {
           className={
             !nav
               ? "fixed left-0 top-0 w-[50%] h-screen border-r border-r-grey-900  bg-gray-500 ease-in-out duration-700"
-              : "fixed left-[-100%] ease-in-out h-screen duration-700"
+              : "fixed left-[100%] ease-in-out h-screen duration-700"
           }
         >
           {/* <h1 className='  w-full text-3xl font-bold text-[#00df9a] m-4'>React.</h1> */}
@@ -86,19 +86,41 @@ const Navbar = () => {
                 Home
               </a>
               <a
-                href="#about-us"
+                href="#about"
                 className="block mt-4 lg:inline-block lg:mt-0 text-ligthGreen hover:text-crimsonLike px-5 transition duration-300"
                 onClick={() => setNav((prev) => !prev)}
               >
-                About Us
+                About 
+              </a>
+              <a
+                href="#skill"
+                className="block mt-4 lg:inline-block lg:mt-0 text-ligthGreen hover:text-crimsonLike px-5 transition duration-300"
+                onClick={() => setNav((prev) => !prev)}
+              >
+                Skills
               </a>
               <a
                 href="#contact-us"
                 className="block mt-4 lg:inline-block lg:mt-0 text-ligthGreen hover:text-crimsonLike px-5 transition duration-300"
                 onClick={() => setNav((prev) => !prev)}
               >
-                Contact Us
+                Experience
               </a>
+              <a
+                href="#contact-us"
+                className="block mt-4 lg:inline-block lg:mt-0 text-ligthGreen hover:text-crimsonLike px-5 transition duration-300"
+                onClick={() => setNav((prev) => !prev)}
+              >
+                Projects
+              </a>
+              <a
+                href="#contact-us"
+                className="block mt-4 lg:inline-block lg:mt-0 text-ligthGreen hover:text-crimsonLike px-5 transition duration-300"
+                onClick={() => setNav((prev) => !prev)}
+              >
+               Achievements
+              </a>
+              
             </div>
           </ul>
         </div>

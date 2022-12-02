@@ -26,9 +26,9 @@ function App() {
    
     
    
-       
+        <Navbar />
     <div className="min-h-screen  px-3 sm:px-5 font-serif bg-gray-600 w-full">
-     <Navbar />
+    
       <div data-aos="fade-down" data-aos-duration="800">
        <Card/>
       </div>

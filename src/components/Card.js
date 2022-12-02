@@ -4,6 +4,8 @@ import { FaGithub ,FaTwitter,FaEnvelope} from "react-icons/fa";
 import{ BsLinkedin} from "react-icons/bs";
 import { FaChevronDown } from 'react-icons/fa';
  import ScrollIntoView from 'react-scroll-into-view'
+ import resume from "../assets/NewResume.pdf";
+
 function Card(props) {
   return (
     <div className="max-w-full   w-[80%] m-5 pt-10 mx-auto  bg-gray-600     ">
@@ -55,6 +57,11 @@ function Card(props) {
         </div>
        
       </div>
+      <div className=" flex p-3 m-3  align-center justify-center">
+         <a href={resume} download>
+                <button className=" items-center btn-primary bg-cyan-600 text-white rounded-md p-2">Download Resume 📄</button>
+              </a>
+                   </div>
        <ScrollIntoView selector="#about">
          <div className="mx-auto m-6   sm:p-10">
            <FaChevronDown className="animate-bounce mx-auto p--0 text-3xl text-cyan-600" />         </div>
