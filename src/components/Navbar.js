@@ -13,7 +13,7 @@ const Navbar = () => {
           <div className="float-right hidden lg:block text-lg">
             <ul className="flex  px-6 ">
          
-              <div className=" text-[white] pt-2">
+              <div className=" text-[white] p-2">
                 <a
                   href="#home"
                   className="block mt-4 lg:inline-block lg:mt-0 text-ligthGreen hover:text-crimsonLike px-5 transition duration-300 hover:text-cyan-600"

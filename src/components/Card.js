@@ -8,7 +8,7 @@ import { FaChevronDown } from 'react-icons/fa';
 
 function Card(props) {
   return (
-    <div className="max-w-full   w-[80%] m-5 pt-10 mx-auto  bg-gray-600     ">
+    <div className="max-w-full   w-[80%] m-5 pt-10 mx-auto  bg-gray-600   ">
       <div className="flex flex-col justify-center w-[60%] md:w-[45%] max-w-lg mx-auto bg-[white] shadow-xl rounded-lg p-2 transform transition duration-500 hover:scale-110 sm:max-w-2xl ">
         <div className="">
           <img

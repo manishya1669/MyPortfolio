@@ -1,11 +1,10 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
-import project1 from "../assets/tailwind.png";
+import project1 from "../assets/dict.png";
 import project2 from "../assets/tailwind.png";
-import project3 from "../assets/tailwind.png";
-import project4 from "../assets/tailwind.png";
-import project5 from "../assets/tailwind.png";
-import project_person from "../assets/tailwind.png";
+import project3 from "../assets/panda.png";
+
+
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper";
@@ -14,18 +13,12 @@ const Project = () => {
   const projects = [
     {
       img: project1,
-      name: "Blog WebApp",
-      github_link: "",
+      name: "Dictionary_Extension",
+      github_link: "https://github.com/manishya1669/Dictionary_Extension",
       live_link: "Web - React/CSS",
-      desc:"It is a blog webapp where you can write short blog and perform CRUD function."
+      desc:"It is a dictionary extension which help to find the meaning  instantly while reading ."
     },
-    {
-      img: project2,
-      name: "CodeAck",
-      github_link: "https://github.com/manishya1669/codeAck",
-      live_link: "Web - React/Tailwind/Nodejs",
-      desc:" A coding platform for student to maintain their consistency through the month."
-    },
+    
     {
       img: project2,
       name: "Three_in_one",
@@ -34,11 +27,11 @@ const Project = () => {
       desc:"It's an application in which three games are present flappy bird, snake and chess."
     },
     {
-      img: project2,
-      name: "CodeAck",
-      github_link: "",
+      img: project3,
+      name: "Codeie",
+      github_link: "https://github.com/manishya1669/Codeie",
       live_link: "App - Flutter/dart",
-      desc:" A coding platform for student to maintain their consistency through the month."
+      desc:" A  need for coding enthusiast where they can track down  upcoming contest on various platform."
     }
 
     
@@ -74,7 +67,7 @@ const Project = () => {
             {projects.map((project_info, i) => (
               <SwiperSlide key={i}>
                 <div className="h-fit w-full p-4 pr-6 items-center bg-slate-700 rounded-xl">
-                  <img src={project_info.img} alt="" className="rounded-lg w-full bg-white pr-10" />
+                  <img src={project_info.img} alt="" className="rounded-lg w-full h-full bg-white pr-10" />
                   <h3 className="text-xl my-4">{project_info.name}</h3>
                   <div className="flex flex-col gap-3">
                     <p>
